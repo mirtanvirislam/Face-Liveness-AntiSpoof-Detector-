@@ -7,7 +7,6 @@ This Face Liveness Detector is based on two models:
 1. Face Image Liveness Network
 2. Eye Movement Liveness Network
 
----
 
 ## Face Image Liveness Network
 
@@ -20,7 +19,6 @@ The Network takes cropped image of the face as input.
 
 ![Face Image Liveness Network](/images/1.png)
 
----
 
 ## Eye Movement Liveness Network
 
@@ -34,7 +32,6 @@ Ratio of eye = height of eye / width of eye
 
 ![Eye Movement Liveness Network](/images/2.png)
 
----
 
 ## The Overall Network:
 
@@ -44,7 +41,6 @@ A combination of these two networks give the best performance.
 Overall, the network is more likely to output false positives than false negatives. That is, it is more likely to incorrectly classify a real face as a fake face.
 Dlib library and OpenCV were used to extract faces landmarks and face images from video stream and build the system.
 
----
 
 ## Caveats:
 
@@ -53,12 +49,11 @@ Experimenting with different quality webcams showed that low quality webcam pred
 
 Model always predicts face to be fake if there is no adequate lighting.
 Possible reasons:
-
 - Real images in dataset are well lit.
 - Images in dataset are of people with fair complexion
 
-Papers read:
 
+Papers read:
 - 2D Face Liveness Detection: an Overview.
 - An Overview of Face Liveness Detection
 - Anti-spoofing Face Databases
